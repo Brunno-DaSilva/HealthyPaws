@@ -1,9 +1,11 @@
 ﻿@page
 @model             IndexModel
 @{
+    ViewData["Title"] = "List of Pets"; 
+    ViewData["CurrentYear"] = DateTime.Now.Year;
 }
 
-<h1>Pets</h1>
+<h1>@ViewData["Title"]</h1>
 
 <form method="get">
     <div class="input-group">
@@ -13,6 +15,7 @@
     </div>
 </form>
 
+    using System.Data;
 <table class="table">
     <thead>
         <tr>
@@ -22,6 +25,7 @@
         </tr>
     </thead>
 
+@* TODO: Change validation TODO this Model.Pets coping foreach null *@
     <tbody>
         @foreach (var item in Model.Pets)
         {
