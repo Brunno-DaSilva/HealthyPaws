@@ -23,7 +23,10 @@ public class HealthyPawsDbContext : DbContext
                     new Owner() { Id = 4, Name = "Jon" },
                     new Owner() { Id = 5, Name = "Elmer" },
                     new Owner() { Id = 6, Name = "Sam" },
-                    new Owner() { Id = 7, Name = "Jessica" }
+                    new Owner() { Id = 7, Name = "Jessica" },
+                    new Owner() { Id = 8, Name = "Lizzy" },
+                    new Owner() { Id = 9, Name = "Helena" },
+                    new Owner() { Id = 10, Name = "Ian" }
                     );
         modelBuilder.Entity<Species>().HasData(
                     new Species() { Id = 1, Name = "Dog" },
@@ -36,16 +39,25 @@ public class HealthyPawsDbContext : DbContext
                     new Breed() { Id = 3, Name = "British Shorthair", IdealMaxWeight = 20, SpeciesId = 2 },
                     new Breed() { Id = 4, Name = "Mixed", IdealMaxWeight = 30, SpeciesId = 2 },
                     new Breed() { Id = 5, Name = "Gray", IdealMaxWeight = 20, SpeciesId = 3 },
-                    new Breed() { Id = 6, Name = "American White", IdealMaxWeight = 30, SpeciesId = 3 }
+                    new Breed() { Id = 6, Name = "American White", IdealMaxWeight = 30, SpeciesId = 3 },
+                    new Breed() { Id = 7, Name = "Portuguese Water Dog", IdealMaxWeight = 45, SpeciesId = 1 },
+                    new Breed() { Id = 8, Name = "German Shepherd", IdealMaxWeight = 60, SpeciesId = 1 },
+                    new Breed() { Id = 9, Name = "Golden Retriever", IdealMaxWeight = 100, SpeciesId = 1 }
                     );
         modelBuilder.Entity<Pet>().HasData(
-                    new Pet() { Id = 1, Name = "Gianni", Age = 10, Weight = 19, PhotoUrl= "/images/gianni.jpg", BreedId = 1 },
-                    new Pet() { Id = 2, Name = "Nina", Age = 8, Weight = 24, PhotoUrl = "/images/nina.jpg", BreedId = 1 },
-                    new Pet() { Id = 3, Name = "Cati", Age = 8, Weight = 33.5m, PhotoUrl = "/images/cati.jpg", BreedId = 2 },
-                    new Pet() { Id = 4, Name = "Cheshire", Age = 20, Weight = 12, BreedId = 3 },
-                    new Pet() { Id = 5, Name = "Garfield", Age = 20, Weight = 12, BreedId = 4 },
-                    new Pet() { Id = 6, Name = "Bugs", Age = 40, Weight = 25, BreedId = 5 },
-                    new Pet() { Id = 7, Name = "Roger", Age = 35, Weight = 31, BreedId = 6 }
+                    new Pet() { Id = 1, Name = "Gianni", Age = 10, Weight = 19, PhotoUrl= "https://healthypawsstorage.blob.core.windows.net/pets-photos/gianni.jpg", BreedId = 1 },
+                    new Pet() { Id = 2, Name = "Nina", Age = 8, Weight = 24, PhotoUrl = "https://healthypawsstorage.blob.core.windows.net/pets-photos/nina.jpg", BreedId = 1 },
+                    new Pet() { Id = 3, Name = "Cati", Age = 8, Weight = 33.5m, PhotoUrl = "https://healthypawsstorage.blob.core.windows.net/pets-photos/cati.jpg", BreedId = 2 },
+                    new Pet() { Id = 4, Name = "Cheshire", Age = 20, Weight = 12, PhotoUrl ="https://healthypawsstorage.blob.core.windows.net/pets-photos/Cheshire.png", BreedId = 3 },
+                    new Pet() { Id = 5, Name = "Garfield", Age = 20, Weight = 12, PhotoUrl ="https://healthypawsstorage.blob.core.windows.net/pets-photos/Garfield.png", BreedId = 4 },
+                    new Pet() { Id = 6, Name = "Bugs", Age = 40, Weight = 25, PhotoUrl ="https://healthypawsstorage.blob.core.windows.net/pets-photos/Bugs.png", BreedId = 5 },
+                    new Pet() { Id = 7, Name = "Roger", Age = 35, Weight = 31, PhotoUrl ="https://healthypawsstorage.blob.core.windows.net/pets-photos/Roger.png", BreedId = 6 },
+                    new Pet() { Id = 8, Name = "Mousse", Age = 2, Weight = 35, PhotoUrl = "https://healthypawsstorage.blob.core.windows.net/pets-photos/mousse.jpg", BreedId = 7 },
+                    new Pet() { Id = 9, Name = "Bruce", Age = 5, Weight = 55, PhotoUrl = "https://healthypawsstorage.blob.core.windows.net/pets-photos/bruce.png" ,BreedId = 8 },
+                    new Pet() { Id = 10, Name = "Brownie", Age = 2, Weight = 79, PhotoUrl = "https://healthypawsstorage.blob.core.windows.net/pets-photos/brownie.png", BreedId = 9 },
+                    new Pet() { Id = 11, Name = "Talita", Age = 12, Weight = 65, PhotoUrl = "https://healthypawsstorage.blob.core.windows.net/pets-photos/talita.png", BreedId = 9 },
+                    new Pet() { Id = 12, Name = "Midnight", Age = 3, Weight = 90, PhotoUrl = "https://healthypawsstorage.blob.core.windows.net/pets-photos/midnight.png", BreedId = 8 }
+
                     );
         modelBuilder.Entity("OwnerPet").HasData(
                     new[]
@@ -61,6 +73,11 @@ public class HealthyPawsDbContext : DbContext
                                 new { PetsId = 6, OwnersId = 5 },
                                 new { PetsId = 6, OwnersId = 6 },
                                 new { PetsId = 7, OwnersId = 7 },
+                                new { PetsId = 8, OwnersId = 8 },
+                                new { PetsId = 9, OwnersId = 9 },
+                                new { PetsId = 10, OwnersId = 10 },
+                                new { PetsId = 11, OwnersId = 10 },
+                                new { PetsId = 12, OwnersId = 9 }
                     }
                 );
     }
