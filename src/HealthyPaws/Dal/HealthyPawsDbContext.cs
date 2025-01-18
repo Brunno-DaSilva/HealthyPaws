@@ -23,7 +23,10 @@ public class HealthyPawsDbContext : DbContext
                     new Owner() { Id = 4, Name = "Jon" },
                     new Owner() { Id = 5, Name = "Elmer" },
                     new Owner() { Id = 6, Name = "Sam" },
-                    new Owner() { Id = 7, Name = "Jessica" }
+                    new Owner() { Id = 7, Name = "Jessica" },
+                    new Owner() { Id = 8, Name = "Lizzy" },
+                    new Owner() { Id = 9, Name = "Helena" },
+                    new Owner() { Id = 10, Name = "Ian" }
                     );
         modelBuilder.Entity<Species>().HasData(
                     new Species() { Id = 1, Name = "Dog" },
@@ -70,6 +73,11 @@ public class HealthyPawsDbContext : DbContext
                                 new { PetsId = 6, OwnersId = 5 },
                                 new { PetsId = 6, OwnersId = 6 },
                                 new { PetsId = 7, OwnersId = 7 },
+                                new { PetsId = 8, OwnersId = 8 },
+                                new { PetsId = 9, OwnersId = 9 },
+                                new { PetsId = 10, OwnersId = 10 },
+                                new { PetsId = 11, OwnersId = 10 },
+                                new { PetsId = 12, OwnersId = 9 }
                     }
                 );
     }
