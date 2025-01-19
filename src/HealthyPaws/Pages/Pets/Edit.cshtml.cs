@@ -15,6 +15,9 @@ public class EditModel : PageModel
 
     public SelectList? Breeds { get; set; }
 
+    [BindProperty]
+    public IFormFile FileUpload { get; set; }
+
     public EditModel(HealthyPawsDbContext dbContext)
     {
         this.dbContext = dbContext;
