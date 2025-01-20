@@ -13,6 +13,22 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\Bruninho\\Documents\\Development\\AzureDevOps\\HealthyPaws\\src\\HealthyPaws\\wwwroot\\images\\Bugs.png",
+      "PackagePath": "staticwebassets\\images\\Bugs.png"
+    },
+    {
+      "Id": "C:\\Users\\Bruninho\\Documents\\Development\\AzureDevOps\\HealthyPaws\\src\\HealthyPaws\\wwwroot\\images\\Cheshire.png",
+      "PackagePath": "staticwebassets\\images\\Cheshire.png"
+    },
+    {
+      "Id": "C:\\Users\\Bruninho\\Documents\\Development\\AzureDevOps\\HealthyPaws\\src\\HealthyPaws\\wwwroot\\images\\Garfield.png",
+      "PackagePath": "staticwebassets\\images\\Garfield.png"
+    },
+    {
+      "Id": "C:\\Users\\Bruninho\\Documents\\Development\\AzureDevOps\\HealthyPaws\\src\\HealthyPaws\\wwwroot\\images\\Roger.png",
+      "PackagePath": "staticwebassets\\images\\Roger.png"
+    },
+    {
       "Id": "C:\\Users\\Bruninho\\Documents\\Development\\AzureDevOps\\HealthyPaws\\src\\HealthyPaws\\wwwroot\\images\\cati.jpg",
       "PackagePath": "staticwebassets\\images\\cati.jpg"
     },
@@ -21,8 +37,20 @@
       "PackagePath": "staticwebassets\\images\\gianni.jpg"
     },
     {
+      "Id": "C:\\Users\\Bruninho\\Documents\\Development\\AzureDevOps\\HealthyPaws\\src\\HealthyPaws\\wwwroot\\images\\midnight.png",
+      "PackagePath": "staticwebassets\\images\\midnight.png"
+    },
+    {
+      "Id": "C:\\Users\\Bruninho\\Documents\\Development\\AzureDevOps\\HealthyPaws\\src\\HealthyPaws\\wwwroot\\images\\midnight2.png",
+      "PackagePath": "staticwebassets\\images\\midnight2.png"
+    },
+    {
       "Id": "C:\\Users\\Bruninho\\Documents\\Development\\AzureDevOps\\HealthyPaws\\src\\HealthyPaws\\wwwroot\\images\\nina.jpg",
       "PackagePath": "staticwebassets\\images\\nina.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Bruninho\\Documents\\Development\\AzureDevOps\\HealthyPaws\\src\\HealthyPaws\\wwwroot\\images\\talita.png",
+      "PackagePath": "staticwebassets\\images\\talita.png"
     },
     {
       "Id": "C:\\Users\\Bruninho\\Documents\\Development\\AzureDevOps\\HealthyPaws\\src\\HealthyPaws\\wwwroot\\js\\site.js",
