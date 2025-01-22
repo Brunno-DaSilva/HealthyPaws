@@ -22,3 +22,9 @@ The Board in Azure DevOps tracks and visualizes work items, user stories, and ta
 
 ![Documentation](image-2.png)
 The Documentation section contains detailed records on the application’s development, architecture, and design decisions. It serves as a reference point for developers, stakeholders, and new team members to ensure a shared understanding of the project's goals and progress.
+
+#### Documentation Sample:
+
+![Documentation Sample](image-3.png)
+
+The Documentation Sample provides a visual reference of how the documentation is organized and structured. This sample helps to ensure consistency in how technical details, workflows, and project guidelines are communicated to the team.
